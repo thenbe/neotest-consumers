@@ -6,6 +6,14 @@ M.consumers = function(client)
 		yank = function()
 			require("neotest-consumers.yank").yank(client)
 		end,
+
+		output_or_attach = function()
+			require("neotest-consumers.output").output_or_attach(client)
+		end,
+
+		stop_global = function()
+			require("neotest-consumers.stop").stop_global(client)
+		end,
 	}
 end
 
